@@ -24,7 +24,6 @@ class AppKernel extends Kernel
             // SymBB, befor other Bundles
             new SymBB\Core\ConfigBundle\SymBBCoreConfigBundle(),
             new SymBB\Core\UserBundle\SymBBCoreUserBundle(),
-            new SymBB\Core\TemplateBundle\SymBBCoreTemplateBundle,
             new SymBB\Core\AdminBundle\SymBBCoreAdminBundle(),
             new SymBB\Core\ForumBundle\SymBBCoreForumBundle(),
             
@@ -35,6 +34,9 @@ class AppKernel extends Kernel
             // FOS
             new FOS\UserBundle\FOSUserBundle(),
             new FOS\RestBundle\FOSRestBundle(),
+            
+            // NKP
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
