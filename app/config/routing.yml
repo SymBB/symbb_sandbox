@@ -1,0 +1,2 @@
+_symbb_config:
+    resource: "@SymBBCoreConfigBundle/Resources/config/routing.yml"
