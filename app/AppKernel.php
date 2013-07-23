@@ -31,12 +31,16 @@ class AppKernel extends Kernel
             new SymBB\Template\AcpBundle\SymBBTemplateAcpBundle(),
             new SymBB\Template\SimpleBundle\SymBBTemplateSimpleBundle,
             
+            new Seyon\EAjaxCRUDBundle\SeyonEAjaxCRUDBundle(),
+            
             // FOS
             new FOS\UserBundle\FOSUserBundle(),
             new FOS\RestBundle\FOSRestBundle(),
+            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             
-            // NKP
+            // NNP
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
