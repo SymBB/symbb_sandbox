@@ -26,8 +26,7 @@
         "friendsofsymfony/rest-bundle": "0.13.*@dev",
         "knplabs/knp-menu-bundle": "2.0.*@dev",
         "knplabs/knp-menu": "2.0.*@dev",
-        "seyon/symbb": "dev-master",
-        "seyon/eajaxcrud": "dev-master"
+        "seyon/symbb": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
