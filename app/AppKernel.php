@@ -29,7 +29,7 @@ class AppKernel extends Kernel
             
             // SymBB Templates
             new SymBB\Template\AcpBundle\SymBBTemplateAcpBundle(),
-            new SymBB\Template\SimpleBundle\SymBBTemplateSimpleBundle,
+            new SymBB\Template\SimpleBundle\SymBBTemplateSimpleBundle(),
             
             // FOS
             new FOS\UserBundle\FOSUserBundle(),
