@@ -27,7 +27,8 @@
         "knplabs/knp-menu-bundle": "2.0.*@dev",
         "knplabs/knp-menu": "2.0.*@dev",
         "seyon/symbb": "dev-master",
-        "sonata-project/intl-bundle": "2.2.*@dev"
+        "sonata-project/intl-bundle": "2.2.*@dev",
+        "helios-ag/fm-bbcode-bundle": "6.2"
     },
     "scripts": {
         "post-install-cmd": [

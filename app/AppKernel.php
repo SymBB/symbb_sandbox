@@ -42,6 +42,9 @@ class AppKernel extends Kernel
             
             // Sonata
             new Sonata\IntlBundle\SonataIntlBundle(),
+            
+            //
+            new FM\BbcodeBundle\FMBbcodeBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
