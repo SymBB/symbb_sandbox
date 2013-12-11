@@ -26,6 +26,7 @@ class AppKernel extends Kernel
             new SymBB\Core\UserBundle\SymBBCoreUserBundle(),
             new SymBB\Core\AdminBundle\SymBBCoreAdminBundle(),
             new SymBB\Core\ForumBundle\SymBBCoreForumBundle(),
+            new \SymBB\Post\RatingBundle\SymBBPostRatingBundle(),
             
             // SymBB Templates
             new SymBB\Template\AcpBundle\SymBBTemplateAcpBundle(),

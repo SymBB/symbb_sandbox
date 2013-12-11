@@ -1,2 +1,5 @@
 _symbb_config:
     resource: "@SymBBCoreConfigBundle/Resources/config/routing.yml"
+    
+_symbb_post_rating:
+    resource: "@SymBBPostRatingBundle/Resources/config/routing.yml"
