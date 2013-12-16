@@ -22,13 +22,7 @@
         "jms/serializer-bundle": "0.12.*@dev",
         "jms/security-extra-bundle": "1.5.*@dev",
         "jms/di-extra-bundle": "1.4.*@dev",
-        "friendsofsymfony/user-bundle": "~2.0@dev",
-        "friendsofsymfony/rest-bundle": "0.13.*@dev",
-        "knplabs/knp-menu-bundle": "2.0.*@dev",
-        "knplabs/knp-menu": "2.0.*@dev",
-        "seyon/symbb": "dev-master",
-        "sonata-project/intl-bundle": "2.2.*@dev",
-        "helios-ag/fm-bbcode-bundle": "6.2"
+        "seyon/symbb": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
@@ -49,7 +43,7 @@
     "config": {
         "bin-dir": "bin"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "extra": {
         "symfony-app-dir": "app",
         "symfony-web-dir": "web",
