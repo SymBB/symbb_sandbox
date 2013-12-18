@@ -22,10 +22,11 @@ class AppKernel extends Kernel
             new JMS\SerializerBundle\JMSSerializerBundle(),
             
             // SymBB, befor other Bundles
-            new SymBB\Core\ConfigBundle\SymBBCoreConfigBundle(),
-            new SymBB\Core\UserBundle\SymBBCoreUserBundle(),
-            new SymBB\Core\AdminBundle\SymBBCoreAdminBundle(),
-            new SymBB\Core\ForumBundle\SymBBCoreForumBundle(),
+            new \SymBB\Core\ConfigBundle\SymBBCoreConfigBundle(),
+            new \SymBB\Core\UserBundle\SymBBCoreUserBundle(),
+            new \SymBB\Core\AdminBundle\SymBBCoreAdminBundle(),
+            new \SymBB\Core\ForumBundle\SymBBCoreForumBundle(),
+            new \SymBB\Core\SystemBundle\SymBBCoreSystemBundle(),
             
             // SymBB optional bundles
             new \SymBB\Post\RatingBundle\SymBBPostRatingBundle(),
