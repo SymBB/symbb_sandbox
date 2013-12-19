@@ -53,6 +53,7 @@ class AppKernel extends Kernel
             
             //
             new FM\BbcodeBundle\FMBbcodeBundle(),
+            new Lsw\MemcacheBundle\LswMemcacheBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
