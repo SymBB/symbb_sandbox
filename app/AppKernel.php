@@ -21,12 +21,16 @@ class AppKernel extends Kernel
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle(),
             
+            // none Default Bundles
+            new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
+            
             // SymBB, befor other Bundles
             new \SymBB\Core\ConfigBundle\SymBBCoreConfigBundle(),
             new \SymBB\Core\UserBundle\SymBBCoreUserBundle(),
             new \SymBB\Core\AdminBundle\SymBBCoreAdminBundle(),
             new \SymBB\Core\ForumBundle\SymBBCoreForumBundle(),
             new \SymBB\Core\SystemBundle\SymBBCoreSystemBundle(),
+            new SymBB\Core\InstallBundle\SymBBCoreInstallBundle(),
             
             // SymBB optional bundles
             new \SymBB\Post\RatingBundle\SymBBPostRatingBundle(),
