@@ -34,8 +34,8 @@ class AppKernel extends Kernel
             new \SymBB\Core\EventBundle\SymBBCoreEventBundle(),
             
             // SymBB optional bundles
-            new \SymBB\Post\RatingBundle\SymBBPostRatingBundle(),
-            new \SymBB\Post\BBCodeBundle\SymBBPostBBCodeBundle(),
+            new \SymBB\Extension\RatingBundle\SymBBExtensionRatingBundle(),
+            new \SymBB\Extension\BBCodeBundle\SymBBExtensionBBCodeBundle(),
             new \SymBB\FOS\UserBundle\SymBBFOSUserBundle(),
             
             // SymBB Templates

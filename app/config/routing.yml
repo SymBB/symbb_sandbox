@@ -2,8 +2,8 @@ _symbb_config:
     resource: "@SymBBCoreConfigBundle/Resources/config/routing.yml"
     prefix: /forum
     
-_symbb_post_rating:
-    resource: "@SymBBPostRatingBundle/Resources/config/routing.yml"
+_symbb_extension_rating:
+    resource: "@SymBBExtensionRatingBundle/Resources/config/routing.yml"
     
 _welcome:
     pattern:  /
