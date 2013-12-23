@@ -31,9 +31,11 @@ class AppKernel extends Kernel
             new \SymBB\Core\ForumBundle\SymBBCoreForumBundle(),
             new \SymBB\Core\SystemBundle\SymBBCoreSystemBundle(),
             new SymBB\Core\InstallBundle\SymBBCoreInstallBundle(),
+            new \SymBB\Core\EventBundle\SymBBCoreEventBundle(),
             
             // SymBB optional bundles
             new \SymBB\Post\RatingBundle\SymBBPostRatingBundle(),
+            new \SymBB\Post\BBCodeBundle\SymBBPostBBCodeBundle(),
             
             // SymBB Templates
             new SymBB\Template\AcpBundle\SymBBTemplateAcpBundle(),
