@@ -37,6 +37,7 @@ class AppKernel extends Kernel
             new \SymBB\Extension\RatingBundle\SymBBExtensionRatingBundle(),
             new \SymBB\Extension\BBCodeBundle\SymBBExtensionBBCodeBundle(),
             new \SymBB\FOS\UserBundle\SymBBFOSUserBundle(),
+            new SymBB\Extension\SurveyBundle\SymBBExtensionSurveyBundle(),
             
             // SymBB Templates
             new SymBB\Template\AcpBundle\SymBBTemplateAcpBundle(),
