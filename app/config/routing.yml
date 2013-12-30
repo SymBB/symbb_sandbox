@@ -5,6 +5,9 @@ _symbb_config:
 _symbb_extension_rating:
     resource: "@SymBBExtensionRatingBundle/Resources/config/routing.yml"
     
+_symbb_extension_survey:
+    resource: "@SymBBExtensionSurveyBundle/Resources/config/routing.yml"
+    
 _welcome:
     pattern:  /
     defaults: { _controller: SymBBCoreForumBundle:Frontend:forum }
