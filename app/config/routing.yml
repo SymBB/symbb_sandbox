@@ -1,5 +1,5 @@
 _symbb_config:
-    resource: "@SymBBCoreConfigBundle/Resources/config/routing.yml"
+    resource: "@SymBBCoreSystemBundle/Resources/config/routing.yml"
     prefix: /forum
     
 _symbb_extension_rating:
