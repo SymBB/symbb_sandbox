@@ -5,6 +5,7 @@ use Symfony\Component\Config\Loader\LoaderInterface;
 
 class AppKernel extends Kernel
 {
+
     public function registerBundles()
     {
         $bundles = array(
@@ -20,10 +21,8 @@ class AppKernel extends Kernel
             new JMS\DiExtraBundle\JMSDiExtraBundle($this),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle(),
-            
             // none Default Bundles
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
-            
             // SymBB, befor other Bundles
             new \SymBB\Core\ConfigBundle\SymBBCoreConfigBundle(),
             new \SymBB\Core\UserBundle\SymBBCoreUserBundle(),
@@ -32,29 +31,22 @@ class AppKernel extends Kernel
             new \SymBB\Core\SystemBundle\SymBBCoreSystemBundle(),
             new SymBB\Core\InstallBundle\SymBBCoreInstallBundle(),
             new \SymBB\Core\EventBundle\SymBBCoreEventBundle(),
-            
             // SymBB optional bundles
             new \SymBB\Extension\RatingBundle\SymBBExtensionRatingBundle(),
             new \SymBB\Extension\BBCodeBundle\SymBBExtensionBBCodeBundle(),
             new \SymBB\FOS\UserBundle\SymBBFOSUserBundle(),
             new SymBB\Extension\SurveyBundle\SymBBExtensionSurveyBundle(),
-            
             // SymBB Templates
-            new SymBB\Template\AcpBundle\SymBBTemplateAcpBundle(),
             new SymBB\Template\SimpleBundle\SymBBTemplateSimpleBundle(),
-            
             // FOS
             new FOS\UserBundle\FOSUserBundle(),
             new FOS\RestBundle\FOSRestBundle(),
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
-            
             // KNP
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
-            
             // Sonata
             new Sonata\IntlBundle\SonataIntlBundle(),
-            
             //
             new FM\BbcodeBundle\FMBbcodeBundle(),
             new Lsw\MemcacheBundle\LswMemcacheBundle(),
@@ -67,10 +59,12 @@ class AppKernel extends Kernel
         }
 
         return $bundles;
+
     }
 
     public function registerContainerConfiguration(LoaderInterface $loader)
     {
-        $loader->load(__DIR__.'/config/config_'.$this->getEnvironment().'.yml');
+        $loader->load(__DIR__ . '/config/config_' . $this->getEnvironment() . '.yml');
+
     }
 }
