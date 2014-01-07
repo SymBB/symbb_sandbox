@@ -33,9 +33,9 @@ assetic:
     filters:
         cssrewrite: ~
         yui_css:
-            jar: "%kernel.root_dir%/Resources/java/yuicompressor-2.4.8pre.jar"
+            jar: "%kernel.root_dir%/Resources/java/yuicompressor-2.4.8.jar"
         yui_js:
-            jar: "%kernel.root_dir%/Resources/java/yuicompressor-2.4.8pre.jar"
+            jar: "%kernel.root_dir%/Resources/java/yuicompressor-2.4.8.jar"
 
 # Doctrine Configuration
 doctrine:
