@@ -24,7 +24,7 @@ class AppKernel extends Kernel
         );
         
         \SymBB\Core\InstallBundle\BundleLoader::loadBundles($bundles);
-
+        
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();

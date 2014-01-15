@@ -2,9 +2,6 @@ _symbb_config:
     resource: "@SymBBCoreSystemBundle/Resources/config/routing.yml"
     prefix: /forum
     
-_symbb_extension_rating:
-    resource: "@SymBBExtensionRatingBundle/Resources/config/routing.yml"
-    
 _symbb_extension_survey:
     resource: "@SymBBExtensionSurveyBundle/Resources/config/routing.yml"
     

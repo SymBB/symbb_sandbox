@@ -13,6 +13,7 @@ extensions:
         class: SymBB\Extension\RatingBundle\SymBBExtensionRatingBundle
         enabled: true
         name: SymBB Raiting Bundle
+        dir: vendor/symbb/symbb/SymBB/Extension/RatingBundle/
     bbcode:
         package: 
         version:
