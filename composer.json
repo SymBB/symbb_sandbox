@@ -22,7 +22,7 @@
         "jms/serializer-bundle": "0.12.*@dev",
         "jms/security-extra-bundle": "1.5.*@dev",
         "jms/di-extra-bundle": "1.4.*@dev",
-        "seyon/symbb": "dev-master"
+        "symbb/symbb": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
