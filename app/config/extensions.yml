@@ -28,3 +28,4 @@ extensions:
         class: SymBB\Extension\SurveyBundle\SymBBExtensionSurveyBundle
         enabled: true
         name: SymBB Survey Bundle
+        dir: vendor/symbb/symbb/SymBB/Extension/SurveyBundle/
