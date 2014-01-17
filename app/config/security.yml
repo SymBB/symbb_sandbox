@@ -19,7 +19,7 @@ security:
         login:
             pattern:  ^/(login$|register|resetting)  
             anonymous: true
-        instakk:
+        install:
             pattern:  ^/symbb/install 
             security: false
         symbb:
