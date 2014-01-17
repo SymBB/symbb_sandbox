@@ -10,5 +10,9 @@ _configurator:
     resource: "@SensioDistributionBundle/Resources/config/routing/webconfigurator.xml"
     prefix:   /_configurator
 
+_symbb_config_dev:
+    resource: "@SymBBCoreSystemBundle/Resources/config/routing_dev.yml"
+    prefix: /forum
+
 _main:
     resource: routing.yml

@@ -23,7 +23,7 @@ class AppKernel extends Kernel
             new JMS\SerializerBundle\JMSSerializerBundle(),
         );
         
-        \SymBB\Core\InstallBundle\BundleLoader::loadBundles($bundles);
+        \SymBB\Core\InstallBundle\BundleLoader::loadBundles($bundles, $this);
         
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
