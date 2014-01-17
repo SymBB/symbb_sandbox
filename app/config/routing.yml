@@ -1,6 +1,6 @@
 _symbb_config:
     resource: "@SymBBCoreSystemBundle/Resources/config/routing.yml"
-    prefix: /forum
+    prefix: /
     
 _welcome:
     pattern:  /
