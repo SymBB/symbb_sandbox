@@ -21,6 +21,7 @@ class AppKernel extends Kernel
             new JMS\DiExtraBundle\JMSDiExtraBundle($this),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle(),
+            new Demo\PageBundle\DemoPageBundle(),
         );
         
         \SymBB\Core\InstallBundle\BundleLoader::loadBundles($bundles, $this);

@@ -1,7 +1,7 @@
-_symbb_config:
-    resource: "@SymBBCoreSystemBundle/Resources/config/routing.yml"
-    prefix: /
+demo_page:
+    resource: "@DemoPageBundle/Resources/config/routing.yml"
+    prefix:   /
     
-_welcome:
-    pattern:  /
-    defaults: { _controller: SymBBCoreForumBundle:Frontend:forum }
+_symbb:
+    resource: "@SymBBCoreSystemBundle/Resources/config/routing.yml"
+    prefix:   /

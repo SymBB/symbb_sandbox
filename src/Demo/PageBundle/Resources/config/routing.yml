@@ -1,0 +1,5 @@
+demopagebundle_default:
+    resource: "@DemoPageBundle/Controller/DefaultController.php"
+    type:     annotation
+    prefix:   /
+
