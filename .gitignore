@@ -16,3 +16,4 @@ app/config/parameters.yml
 /web/frontend/
 /web/css/
 /web/js/
+/web/vendor/
