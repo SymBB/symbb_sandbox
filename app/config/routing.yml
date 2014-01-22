@@ -1,7 +1,8 @@
 demo_page:
     resource: "@DemoPageBundle/Resources/config/routing.yml"
     prefix:   /
+
     
 _symbb:
     resource: "@SymBBCoreSystemBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   / 

@@ -13,3 +13,18 @@ parameters:
 
     locale:            en
     secret:            ThisTokenIsNotSoSecretChangeIt
+    
+    requiredlocales:   de|en
+    defaultlocale:     de
+    multilanguage:     true
+
+    cdnpath:           ''
+
+    websitetitle:      MyProject 
+
+    searchport:        9200
+    searchindexname:   myproject
+    searchindexprefix: myproject
+
+    #analytics.google:  UA-XXXXXXX-X
+    analytics.googletagmanager: GTM-XXXXXX

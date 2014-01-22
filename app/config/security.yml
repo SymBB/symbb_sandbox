@@ -1,6 +1,6 @@
 security:
     acl:
-        connection: symbb
+        connection: default
     encoders:
         FOS\UserBundle\Model\UserInterface: sha512
 
@@ -16,6 +16,9 @@ security:
         dev:
             pattern:  ^/(_(profiler|wdt)|css|images|js)/
             security: false
+        login:
+            pattern:  ^/([^/]*)/(login$|register|resetting)  
+            anonymous: true
         install:
             pattern:  ^/symbb/install 
             security: false

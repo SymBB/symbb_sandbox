@@ -23,8 +23,8 @@
         "ddeboer/data-import": "dev-master",
         "ddeboer/data-import-bundle": "dev-master",
         
-        "doctrine/data-fixtures": "1.0.*@dev",
-        "doctrine/doctrine-fixtures-bundle": ">=2.1,<2.3@dev",
+        "doctrine/data-fixtures": "dev-master",
+        "doctrine/doctrine-fixtures-bundle": "dev-master",
         "doctrine/doctrine-migrations-bundle": "dev-master@dev",
         "doctrine/migrations": "dev-master@dev",
         
@@ -82,7 +82,7 @@
         "coresphere/console-bundle": "dev-master",
         
         "symbb/extension-bundle": "dev-master",
-        "symbb/symbb": "dev-master"
+        "symbb/symbb": "dev-kunstmaan"
     },
     "scripts": {
         "post-install-cmd": [
