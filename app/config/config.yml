@@ -72,8 +72,6 @@ doctrine:
             default:
                 auto_mapping: false
                 connection:   default
-                mappings:
-                    DemoPageBundle: ~
         
 
 # Swiftmailer Configuration
@@ -84,5 +82,3 @@ swiftmailer:
     password:  %mailer_password%
     spool:     { type: memory }
 
-white_october_pagerfanta:
-    default_view: twitter_bootstrap
