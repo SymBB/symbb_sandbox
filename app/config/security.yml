@@ -30,7 +30,7 @@ security:
                 provider: fos_userbundle
             logout:
               path:   fos_user_security_logout
-              target: KunstmaanAdminBundle_homepage
+              target: /
             anonymous:    true
             remember_me:
                 key:      %secret%
