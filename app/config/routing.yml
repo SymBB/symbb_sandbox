@@ -1,3 +1,8 @@
+JMSTranslationBundle_ui:
+    resource: "@JMSTranslationBundle/Controller/"
+    type:     annotation
+    prefix:   /_trans
+    
 _symbb:
     resource: "@SymBBCoreSystemBundle/Resources/config/routing.yml"
     prefix:   /{_locale}/
@@ -10,3 +15,5 @@ _welcome:
 _welcome_1:
     pattern:  /
     defaults: { _controller: SymBBCoreForumBundle:Frontend:forum }
+    
+    
