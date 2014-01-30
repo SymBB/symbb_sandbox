@@ -81,7 +81,7 @@ swiftmailer:
     username:  %mailer_user%
     password:  %mailer_password%
     spool:     { type: memory }
-
+            
 jms_translation:
     configs:
         app:
