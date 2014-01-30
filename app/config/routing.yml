@@ -5,7 +5,7 @@ JMSTranslationBundle_ui:
     
 _symbb:
     resource: "@SymBBCoreSystemBundle/Resources/config/routing.yml"
-    prefix:   /{_locale}/
+    prefix:   /
     
     
 _welcome:
