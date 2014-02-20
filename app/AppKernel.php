@@ -60,6 +60,7 @@ class AppKernel extends Kernel
                 $name = $bundle->getName();
                 $extenBundle = $bundle->extendBundle();
                 $this->bundleMap[$name][] = $this->bundles[$extenBundle];
+                //$this->bundleMap[$name][] = $bundle;
             }
         }
     }
