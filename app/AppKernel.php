@@ -13,6 +13,8 @@ class AppKernel extends SymBB\Core\InstallBundle\Kernel
 
     public function registerBundles()
     {
+        $parentBundles = parent::registerBundles();
+        
         $bundles = array(
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new Symfony\Bundle\SecurityBundle\SecurityBundle(),
@@ -28,13 +30,13 @@ class AppKernel extends SymBB\Core\InstallBundle\Kernel
             new JMS\AopBundle\JMSAopBundle()
         );
 
-        \SymBB\Core\InstallBundle\BundleLoader::loadBundles($bundles, $this);
-
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
         }
+
+        $bundles = \array_merge($bundles, $parentBundles);
 
         return $bundles;
     }
