@@ -14,3 +14,7 @@ web_profiler:
 
 swiftmailer:
     disable_delivery: true
+
+sym_bb_core_config:
+    database:
+      table_prefix: symbb_test_

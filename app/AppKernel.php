@@ -4,6 +4,12 @@ use Symfony\Component\Config\Loader\LoaderInterface;
 
 class AppKernel extends SymBB\Core\InstallBundle\Kernel
 {
+    
+    
+    public function registerContainerConfiguration(\Symfony\Component\Config\Loader\LoaderInterface $loader)
+    {
+        $loader->load(__DIR__ . '/config/config_' . $this->getEnvironment() . '.yml');
+    }
 
     public function registerBundles()
     {

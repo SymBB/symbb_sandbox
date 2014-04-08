@@ -82,3 +82,7 @@ swiftmailer:
     password:  %mailer_password%
     spool:     { type: memory }
             
+sym_bb_core_config:
+    database:
+      table_prefix: symbb_
+    
