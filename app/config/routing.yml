@@ -1,14 +1,10 @@
 _symbb:
     resource: "@SymBBCoreSystemBundle/Resources/config/routing.yml"
     prefix:   /
-    
-    
-_welcome:
-    pattern:  /{_locale}/
-    defaults: { _controller: SymBBCoreForumBundle:Frontend:forum }
-    
+        
 _welcome_1:
-    pattern:  /
-    defaults: { _controller: SymBBCoreForumBundle:Frontend:forum }
-    
-    
+    path: /
+    defaults:
+        _controller: FrameworkBundle:Redirect:redirect
+        route: symbb_forum_index
+        permanent: true
