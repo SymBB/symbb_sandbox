@@ -1,6 +1,6 @@
 _symbb:
     resource: "@SymBBCoreSystemBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /{_locale}/
         
 _welcome_1:
     path: /
