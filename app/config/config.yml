@@ -32,10 +32,11 @@ assetic:
     #java: /usr/bin/java
     filters:
         cssrewrite: ~
-        yui_css:
-            jar: "%kernel.root_dir%/Resources/java/yuicompressor-2.4.8.jar"
-        yui_js:
-            jar: "%kernel.root_dir%/Resources/java/yuicompressor-2.4.8.jar"
+        uglifyjs2:
+            # the path to the uglifyjs executable
+            bin: ./app/Resources/node_modules/.bin/uglifyjs
+        uglifycss:
+            bin: ./app/Resources/node_modules/.bin/uglifyjs
         scss: ~
         jpegoptim:
             bin: jpegoptim
