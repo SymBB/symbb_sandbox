@@ -8,7 +8,7 @@
     },
     "require": {
         "php": ">=5.3.3",
-        "symfony/symfony": "2.4.*",
+        "symfony/symfony": "2.5.*",
         "incenteev/composer-parameter-handler": "~2.0",
         "symbb/symbb": "dev-develop"
     },
