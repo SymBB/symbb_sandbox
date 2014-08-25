@@ -14,15 +14,15 @@
        </target>
 
        <target name="symfony.clean" description="Cleanup Symfony data">
-           <delete dir="${appdir}/cache" />
-           <antcall target="symfony.prepare" />
-       </target>
-
-       <target name="symfony.prepare" >
-           <mkdir dir="${appdir}/cache" />
-           <exec executable="${builddir}/permissions.sh" description="Setup permissions" />
+           <antcall target="cache.clear" />
            <antcall target="symfony.update" />
        </target>
+
+        <target name="cache.clear" >
+            <delete dir="${appdir}/cache" />
+            <mkdir dir="${appdir}/cache" />
+            <exec executable="${builddir}/permissions.sh" description="Setup permissions" />
+        </target>
 
        <target name="symfony.update">
            <exec executable="php">
@@ -33,15 +33,22 @@
                <arg value="composer.phar" />
                <arg value="update" />
            </exec>
-           <antcall target="setup.database" />
-        </target>
-        <target name="setup.database">
            <exec executable="php">
-                <arg value="app/console" />
-                <arg value="doctrine:schema:update" />
-                <arg value="-n" />
-                <arg value="--force" />
-                <arg value="--em=symbb" />
+               <arg value="app/console" />
+               <arg value="doctrine:schema:update" />
+               <arg value="--force" />
+               <arg value="--em=symbb" />
            </exec>
-       </target>
+           <exec executable="php">
+               <arg value="app/console" />
+               <arg value="fos:js-routing:dump" />
+           </exec>
+           <exec executable="php">
+               <arg value="app/console" />
+               <arg value="assetic:dump" />
+               <arg value="--env=prod" />
+           </exec>
+           <antcall target="cache.clear" />
+        </target>
+
     </project>
