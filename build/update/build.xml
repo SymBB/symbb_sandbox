@@ -32,6 +32,7 @@
            <exec executable="php">
                <arg value="composer.phar" />
                <arg value="update" />
+               <arg value="--prefer-source" />
            </exec>
            <exec executable="php">
                <arg value="app/console" />
