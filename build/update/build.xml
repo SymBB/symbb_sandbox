@@ -40,6 +40,7 @@
                <arg value="--force" />
                <arg value="--em=symbb" />
            </exec>
+           <antcall target="cache.clear" />
            <exec executable="php">
                <arg value="app/console" />
                <arg value="fos:js-routing:dump" />
