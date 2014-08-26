@@ -1,1 +1,40 @@
-{ symbb/extension-rating: { package: symbb/extension-rating, version: '', constraint: '', bundleClass: \SymBB\Extension\RatingBundle\SymBBExtensionRatingBundle, enabled: false, name: 'SymBB Rating', composer: false }, symbb/extension-survey: { package: symbb/extension-survey, version: '', constraint: '', bundleClass: \SymBB\Extension\SurveyBundle\SymBBExtensionSurveyBundle, enabled: true, name: 'SymBB Survey', composer: false }, symbb/extension-calendar: { package: symbb/extension-calendar, version: '', constraint: '', bundleClass: \SymBB\Extension\CalendarBundle\SymBBExtensionCalendarBundle, enabled: false, name: 'SymBB Calendar', composer: false }, symbb/extension-user-tag: { package: symbb/extension-user-tag, version: '', constraint: '', bundleClass: \SymBB\Extension\UserTagBundle\SymBBExtensionUserTagBundle, enabled: true, name: 'SymBB User Tags', composer: false } }
+symbb/extension-calendar:
+  bundleClass: \SymBB\Extension\CalendarBundle\SymBBExtensionCalendarBundle
+  composer: false
+  constraint: ""
+  enabled: false
+  name: "SymBB Calendar"
+  package: symbb/extension-calendar
+  version: ""
+symbb/extension-rating: 
+  bundleClass: \SymBB\Extension\RatingBundle\SymBBExtensionRatingBundle
+  composer: false
+  constraint: ""
+  enabled: true
+  name: "SymBB Rating"
+  package: symbb/extension-rating
+  version: ""
+symbb/extension-survey: 
+  bundleClass: \SymBB\Extension\SurveyBundle\SymBBExtensionSurveyBundle
+  composer: false
+  constraint: ""
+  enabled: true
+  name: "SymBB Survey"
+  package: symbb/extension-survey
+  version: ""
+symbb/extension-user-tag: 
+  bundleClass: \SymBB\Extension\UserTagBundle\SymBBExtensionUserTagBundle
+  composer: false
+  constraint: ""
+  enabled: true
+  name: "SymBB User Tags"
+  package: symbb/extension-user-tag
+  version: ""
+symbb/extension-shoutbox:
+  bundleClass: \SymBB\Extension\ShoutboxBundle\SymBBExtensionShoutboxBundle
+  composer: false
+  constraint: ""
+  enabled: true
+  name: "SymBB Simple Shoutbox"
+  package: symbb/extension-shoutbox
+  version: ""
