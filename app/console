@@ -23,5 +23,8 @@ if ($debug) {
 }
 
 $kernel = new AppKernel($env, $debug);
+// we need this because of this runtime notice: https://github.com/LeaseWeb/LswMemcacheBundle/issues/21
+// remove it after bug is solved
+error_reporting('E_ALL & ~E_DEPRECATED & ~E_STRICT');
 $application = new Application($kernel);
 $application->run($input);

@@ -22,7 +22,10 @@ Debug::enable();
 
 require_once __DIR__.'/../app/AppKernel.php';
 
-$kernel = new AppKernel('dev', false);
+$kernel = new AppKernel('dev', true);
+// we need this because of this runtime notice: https://github.com/LeaseWeb/LswMemcacheBundle/issues/21
+// remove it after bug is solved
+error_reporting('E_ALL & ~E_DEPRECATED & ~E_STRICT');
 $kernel->loadClassCache();
 Request::enableHttpMethodParameterOverride();
 $request = Request::createFromGlobals();

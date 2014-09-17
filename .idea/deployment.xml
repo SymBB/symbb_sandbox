@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="symbb SF2">
+  <component name="PublishConfigData" autoUpload="Always" serverName="symbb dev">
     <serverData>
-      <paths name="symbb SF2">
+      <paths name="symbb dev">
         <serverdata>
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
+          <excludedPaths>
+            <excludedPath path="/vendor" />
+            <excludedPath path="/bin" />
+            <excludedPath path="/web/bundles" />
+          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+   <project basedir="../..//" default="clean" name="Symbb Update Script">
+       <description>
+          Update Script for Symbb
+       </description>
+       <property name="rootdir" location="./" />
+       <property name="appdir"  location="${rootdir}/app" />
+       <property name="builddir"  location="${rootdir}/build" />
+       <property name="vendordir" location ="${rootdir}/vendor" />
+       <property name="webdir" location="${rootdir}/web" />
+
+       <target name="clean" description="Cleanup build artifacts">
+          <antcall target="symfony.clean" />
+       </target>
+
+       <target name="symfony.clean" description="Cleanup Symfony data">
+           <antcall target="cache.clear" />
+           <antcall target="symfony.update" />
+       </target>
+
+        <target name="cache.clear" >
+            <delete dir="${appdir}/cache" />
+            <mkdir dir="${appdir}/cache" />
+            <exec executable="${builddir}/permissions.sh" description="Setup permissions" />
+        </target>
+
+       <target name="symfony.update">
+           <exec executable="php">
+               <arg value="composer.phar" />
+               <arg value="self-update" />
+           </exec>
+           <exec executable="php">
+               <arg value="composer.phar" />
+               <arg value="update" />
+               <arg value="--prefer-source" />
+           </exec>
+           <exec executable="php">
+               <arg value="app/console" />
+               <arg value="doctrine:schema:update" />
+               <arg value="--force" />
+               <arg value="--em=symbb" />
+           </exec>
+           <antcall target="cache.clear" />
+           <exec executable="php">
+               <arg value="app/console" />
+               <arg value="fos:js-routing:dump" />
+           </exec>
+           <exec executable="php">
+               <arg value="app/console" />
+               <arg value="assetic:dump" />
+               <arg value="--env=prod" />
+           </exec>
+           <antcall target="cache.clear" />
+        </target>
+
+    </project>
