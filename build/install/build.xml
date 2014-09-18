@@ -54,6 +54,7 @@
                 <arg value="doctrine:schema:update" />
                 <arg value="-n" />
                 <arg value="--em=symbb" />
+                <arg value="--force" />
             </exec>
            <exec executable="php">
                <arg value="app/console" />
