@@ -49,6 +49,12 @@
                <arg value="-n" />
                <arg value="--connection=symbb" />
            </exec>
+            <exec executable="php">
+                <arg value="app/console" />
+                <arg value="doctrine:schema:update" />
+                <arg value="-n" />
+                <arg value="--em=symbb" />
+            </exec>
            <exec executable="php">
                <arg value="app/console" />
                <arg value="doctrine:fixtures:load" />
