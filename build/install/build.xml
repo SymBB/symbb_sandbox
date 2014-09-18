@@ -41,13 +41,13 @@
                 <arg value="doctrine:database:drop" />
                 <arg value="-n" />
                 <arg value="--force" />
-                <arg value="--em=symbb" />
+                <arg value="--connection=symbb" />
            </exec>
            <exec executable="php">
                <arg value="app/console" />
                <arg value="doctrine:database:create" />
                <arg value="-n" />
-               <arg value="--em=symbb" />
+               <arg value="--connection=symbb" />
            </exec>
            <exec executable="php">
                <arg value="app/console" />
