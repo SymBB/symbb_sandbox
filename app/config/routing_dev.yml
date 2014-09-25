@@ -11,7 +11,7 @@ _configurator:
     prefix:   /_configurator
 
 _symbb_config_dev:
-    resource: "@SymBBCoreSystemBundle/Resources/config/routing_dev.yml"
+    resource: "@SymbbCoreSystemBundle/Resources/config/routing_dev.yml"
     prefix: /forum
 
 _main:
