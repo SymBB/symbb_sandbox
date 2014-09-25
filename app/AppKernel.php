@@ -2,7 +2,7 @@
 
 use Symfony\Component\Config\Loader\LoaderInterface;
 
-class AppKernel extends SymBB\Core\InstallBundle\Kernel
+class AppKernel extends Symbb\Core\InstallBundle\Kernel
 {
     
     
