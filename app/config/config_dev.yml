@@ -29,7 +29,3 @@ assetic:
 
 #swiftmailer:
 #    delivery_address: me@example.com
-
-sym_bb_core_config:
-    database:
-      table_prefix: symbb_dev_
