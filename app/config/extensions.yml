@@ -1,5 +1,5 @@
 symbb/extension-calendar:
-  bundleClass: \SymBB\Extension\CalendarBundle\SymBBExtensionCalendarBundle
+  bundleClass: \Symbb\Extension\CalendarBundle\SymbbExtensionCalendarBundle
   composer: false
   constraint: ""
   enabled: false
@@ -7,7 +7,7 @@ symbb/extension-calendar:
   package: symbb/extension-calendar
   version: ""
 symbb/extension-rating: 
-  bundleClass: \SymBB\Extension\RatingBundle\SymBBExtensionRatingBundle
+  bundleClass: \Symbb\Extension\RatingBundle\SymbbExtensionRatingBundle
   composer: false
   constraint: ""
   enabled: true
@@ -15,7 +15,7 @@ symbb/extension-rating:
   package: symbb/extension-rating
   version: ""
 symbb/extension-survey: 
-  bundleClass: \SymBB\Extension\SurveyBundle\SymBBExtensionSurveyBundle
+  bundleClass: \Symbb\Extension\SurveyBundle\SymbbExtensionSurveyBundle
   composer: false
   constraint: ""
   enabled: true
@@ -23,7 +23,7 @@ symbb/extension-survey:
   package: symbb/extension-survey
   version: ""
 symbb/extension-user-tag: 
-  bundleClass: \SymBB\Extension\UserTagBundle\SymBBExtensionUserTagBundle
+  bundleClass: \Symbb\Extension\UserTagBundle\SymbbExtensionUserTagBundle
   composer: false
   constraint: ""
   enabled: true
@@ -31,7 +31,7 @@ symbb/extension-user-tag:
   package: symbb/extension-user-tag
   version: ""
 symbb/extension-shoutbox:
-  bundleClass: \SymBB\Extension\ShoutboxBundle\SymBBExtensionShoutboxBundle
+  bundleClass: \Symbb\Extension\ShoutboxBundle\SymbbExtensionShoutboxBundle
   composer: false
   constraint: ""
   enabled: true
