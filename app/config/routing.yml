@@ -1,5 +1,5 @@
 _symbb:
-    resource: "@SymBBCoreSystemBundle/Resources/config/routing.yml"
+    resource: "@SymbbCoreSystemBundle/Resources/config/routing.yml"
     prefix:   /{_locale}/
         
 _welcome_1:
