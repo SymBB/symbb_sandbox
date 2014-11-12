@@ -14,17 +14,22 @@
        </target>
 
        <target name="symfony.clean" description="Cleanup Symfony data">
-           <delete dir="${appdir}/cache" />
-           <delete dir="${appdir}/logs" />
-           <antcall target="symfony.prepare" />
-       </target>
-
-       <target name="symfony.prepare" >
-           <mkdir dir="${appdir}/cache" />
-           <mkdir dir="${appdir}/logs" />
-           <exec executable="${builddir}/permissions.sh" description="Setup permissions" />
+           <antcall target="logs.clear" />
+           <antcall target="cache.clear" />
            <antcall target="symfony.update" />
        </target>
+
+        <target name="logs.clear" >
+            <delete dir="${appdir}/logs" />
+            <mkdir dir="${appdir}/logs" />
+            <exec executable="${builddir}/permissions.sh" description="Setup permissions" />
+        </target>
+
+        <target name="cache.clear" >
+            <delete dir="${appdir}/cache" />
+            <mkdir dir="${appdir}/cache" />
+            <exec executable="${builddir}/permissions.sh" description="Setup permissions" />
+        </target>
 
        <target name="symfony.update">
            <exec executable="php">
