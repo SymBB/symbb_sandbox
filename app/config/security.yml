@@ -19,6 +19,9 @@ security:
         login:
             pattern:  ^/([^/]*)/(login$|register|resetting)  
             anonymous: true
+            stateless: false
+            simple_preauth:
+                authenticator: symbb.security.authentication.guest
         install:
             pattern:  ^/symbb/install 
             security: false
@@ -32,6 +35,9 @@ security:
               path:   symbb_logout
               target: /
             anonymous:    true
+            stateless: false
+            simple_preauth:
+                authenticator: symbb.security.authentication.guest
             remember_me:
                 key:      %secret%
                 lifetime: 604800
