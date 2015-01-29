@@ -85,4 +85,3 @@ swiftmailer:
 symbb_core_config:
     database:
       table_prefix: symbb_dev_
-    

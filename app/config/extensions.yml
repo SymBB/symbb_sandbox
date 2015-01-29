@@ -38,4 +38,12 @@ symbb/extension-shoutbox:
   name: "SymBB Simple Shoutbox"
   package: symbb/extension-shoutbox
   version: ""
+symbb/extension-tapatalk:
+  bundleClass: \Symbb\Extension\TapatalkBundle\SymBBExtensionTapatalkBundle
+  composer: true
+  constraint: ""
+  enabled: true
+  name: "SymBB Tapatalk Extension"
+  package: symbb/extension-tapatalk
+  version: ""
 
