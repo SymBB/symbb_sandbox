@@ -17,3 +17,6 @@ parameters:
     recaptcha.private_key:
     recaptcha.public_key:
 
+    system.email:
+    system.name:
+
