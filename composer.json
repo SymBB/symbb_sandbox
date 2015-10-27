@@ -6,9 +6,11 @@
     "autoload": {
         "psr-0": { "": "src/" }
     },
-    "require-dev": {
-        "sensio/generator-bundle": "~2.3",
+    "require": {
         "symbb/symbb": "dev-develop"
+    },
+    "require-dev": {
+        "sensio/generator-bundle": "~2.3"
     },
     "scripts": {
         "post-root-package-install": [
@@ -40,9 +42,6 @@
         "symfony-assets-install": "relative",
         "incenteev-parameters": {
             "file": "app/config/parameters.yml"
-        },
-        "branch-alias": {
-            "dev-master": "2.7-dev"
         }
     },
     "minimum-stability": "dev"
